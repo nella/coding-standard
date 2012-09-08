@@ -27,7 +27,7 @@
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class Nella_Sniffs_Strings_DoubleQuoteUsageSniff implements PHP_CodeSniffer_Sniff
+class Squiz_Sniffs_Strings_DoubleQuoteUsageSniff implements PHP_CodeSniffer_Sniff
 {
 
 
@@ -81,6 +81,18 @@ class Nella_Sniffs_Strings_DoubleQuoteUsageSniff implements PHP_CodeSniffer_Snif
         if ($workingString[0] !== '"') {
             return;
         }
+
+        // Skip double quoted string with variables
+        if ($tokens[$stackPtr]['code'] === T_DOUBLE_QUOTED_STRING) {
+            $stringTokens = token_get_all('<?php '.$workingString);
+            foreach ($stringTokens as $token) {
+                if (is_array($token) === true && $token[0] === T_VARIABLE) {
+                	return;
+                }
+            }
+
+            return;
+        }//end if
 
         // Work through the following tokens, in case this string is stretched
         // over multiple Lines.
