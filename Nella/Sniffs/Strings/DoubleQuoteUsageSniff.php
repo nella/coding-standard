@@ -27,7 +27,7 @@
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class Squiz_Sniffs_Strings_DoubleQuoteUsageSniff implements PHP_CodeSniffer_Sniff
+class Nella_Sniffs_Strings_DoubleQuoteUsageSniff implements PHP_CodeSniffer_Sniff
 {
 
 
