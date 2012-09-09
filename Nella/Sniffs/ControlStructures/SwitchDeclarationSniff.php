@@ -124,7 +124,7 @@ class Nella_Sniffs_ControlStructures_SwitchDeclarationSniff implements PHP_CodeS
                 // Only need to check some things once, even if the
                 // closer is shared between multiple case statements, or even
                 // the default case.
-                if ($tokens[$nextCloser]['column'] !== ($caseAlignment + 4)) {
+                if ($tokens[$nextCloser]['column'] !== ($caseAlignment + 1)) {
                     $error = 'Terminating statement must be indented to the same level as the CASE body';
                     $phpcsFile->addError($error, $nextCloser, 'BreakIndent');
                 }
