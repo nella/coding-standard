@@ -12,6 +12,7 @@
 		<exclude name="PSR2.Classes.ClassDeclaration"/>
 		<exclude name="PSR2.Namespaces.UseDeclaration"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature"/>
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration"/>
 	</rule>
 
 	<!-- 2. TRUE/FALSE/NULL -->
