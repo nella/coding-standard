@@ -9,7 +9,6 @@
 		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
 		<exclude name="Generic.PHP.LowerCaseConstant"/>
 		<exclude name="PSR2.Namespaces.UseDeclaration"/>
-		<exclude name="PSR2.Classes.ClassDeclaration"/>
 		<exclude name="PSR2.Namespaces.UseDeclaration"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature"/>
 		<exclude name="PSR2.ControlStructures.SwitchDeclaration"/>
