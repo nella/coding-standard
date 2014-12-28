@@ -1,0 +1,15 @@
+{
+	"name": "nella/coding-standard",
+	"description": "Nella Project - Coding Standard",
+	"type": "library",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4.0",
+		"squizlabs/php_codesniffer": "~2.1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Nella\\Sniffs\\": [ "Nella/Sniffs" ]
+		}
+	}
+}
