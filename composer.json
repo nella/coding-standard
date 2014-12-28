@@ -1,15 +1,29 @@
 {
 	"name": "nella/coding-standard",
 	"description": "Nella Project - Coding Standard",
+	"homepage": "https://github.com/nella/coding-standard",
 	"type": "library",
+	"keywords": ["cs", "coding standard", "style"],
 	"license": "MIT",
-	"require": {
-		"php": ">=5.4.0",
-		"squizlabs/php_codesniffer": "~2.1.0"
+	"authors": [
+		{
+			"name": "Patrik Votoček",
+			"email": "patrik@votocek.cz",
+			"homepage": "http://patrik.votocek.cz",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/nella/coding-standard/issues",
+		"source": "https://github.com/nella/coding-standard"
 	},
 	"autoload": {
 		"psr-4": {
 			"Nella\\Sniffs\\": [ "Nella/Sniffs" ]
 		}
+	},
+	"require": {
+		"php": ">=5.4.0",
+		"squizlabs/php_codesniffer": "~2.1.0"
 	}
 }
