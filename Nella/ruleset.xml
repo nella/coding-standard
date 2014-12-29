@@ -5,7 +5,7 @@
 	<!-- inspired by Consistence -->
 
 	<arg name="tab-width" value="4" />
-	<config name="extensions" value="php,phpt" />
+	<arg name="extensions" value="php,phpt" />
 
 	<rule ref="PSR2">
 		<exclude name="Generic.Files.LineLength" />
