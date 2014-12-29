@@ -12,6 +12,7 @@
 		<exclude name="Generic.PHP.LowerCaseConstant" />
 		<exclude name="Generic.WhiteSpace.DisallowTabIndent" />
 		<exclude name="PEAR.Functions.ValidDefaultValue" />
+		<exclude name="PSR1.Files.SideEffects" />
 		<exclude name="PSR2.Classes.ClassDeclaration" />
 		<exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace" />
 		<exclude name="PSR2.ControlStructures.SwitchDeclaration.caseIndent" />
@@ -41,6 +42,9 @@
 	<rule ref="PEAR.Commenting.InlineComment" />
 	<rule ref="PEAR.Formatting.MultiLineAssignment" />
 	<rule ref="PEAR.WhiteSpace.ObjectOperatorIndent" />
+	<rule ref="PSR1.Files.SideEffects">
+		<exclude-pattern>*.phpt</exclude-pattern>
+	</rule>
 	<rule ref="Squiz.Commenting.DocCommentAlignment" />
 	<rule ref="Squiz.Functions.GlobalFunction" />
 	<rule ref="Squiz.PHP.GlobalKeyword" />
