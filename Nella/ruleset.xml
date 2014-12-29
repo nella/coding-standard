@@ -18,6 +18,7 @@
 		<exclude name="PSR2.ControlStructures.SwitchDeclaration.caseIndent" />
 		<exclude name="PSR2.ControlStructures.SwitchDeclaration.defaultIndent" />
 		<exclude name="PSR2.Methods.FunctionCallSignature.ContentAfterOpenBracket" />
+		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace" />
 	</rule>
 
 	<rule ref="Generic.Classes.DuplicateClassName" />
