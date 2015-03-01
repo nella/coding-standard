@@ -21,7 +21,7 @@ before_install:
   - composer self-update
 
 install:
-  - composer install --no-interaction --prefer-source --dev
+  - composer install --no-interaction --prefer-source
 
 script:
   - vendor/bin/parallel-lint Nella
