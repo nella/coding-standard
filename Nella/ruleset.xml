@@ -4,77 +4,18 @@
 
 	<!-- inspired by Consistence -->
 
-	<arg name="tab-width" value="4" />
 	<arg name="extensions" value="php,phpt" />
 
-	<rule ref="PSR2">
-		<exclude name="Generic.Files.LineLength" />
-		<exclude name="Generic.PHP.LowerCaseConstant" />
-		<exclude name="Generic.WhiteSpace.DisallowTabIndent" />
-		<exclude name="PEAR.Functions.ValidDefaultValue" />
-		<exclude name="PSR1.Files.SideEffects" />
-		<exclude name="PSR2.Classes.ClassDeclaration" />
-		<exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace" />
-		<exclude name="PSR2.ControlStructures.SwitchDeclaration.caseIndent" />
-		<exclude name="PSR2.ControlStructures.SwitchDeclaration.defaultIndent" />
-		<exclude name="PSR2.Methods.FunctionCallSignature.ContentAfterOpenBracket" />
-		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace" />
+	<rule ref="../Consistence/ruleset.xml">
+		<exclude name="Generic.PHP.LowerCaseConstant" /><!-- we are using UpperCase constants -->
+		<exclude name="Squiz.Commenting.FunctionComment" /><!-- we are using @param docBlock without $paramName -->
 	</rule>
-
-	<rule ref="Generic.Classes.DuplicateClassName" />
-	<rule ref="Generic.CodeAnalysis.UnconditionalIfStatement" />
-	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier" />
-	<rule ref="Generic.Files.LineLength">
-		<properties>
-			<property name="lineLimit" value="120" />
-			<property name="absoluteLineLimit" value="120" />
-		</properties>
-	</rule>
-	<rule ref="Generic.Formatting.SpaceAfterCast" />
-	<rule ref="Generic.Functions.CallTimePassByReference" />
-	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman" />
-	<rule ref="Generic.NamingConventions.ConstructorName" />
-	<rule ref="Generic.PHP.UpperCaseConstant" />
-	<rule ref="Generic.PHP.DeprecatedFunctions" />
-	<rule ref="Generic.PHP.ForbiddenFunctions" />
-	<rule ref="Generic.WhiteSpace.ScopeIndent" />
-	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent" />
-	<rule ref="PEAR.Classes.ClassDeclaration" />
-	<rule ref="PEAR.Commenting.InlineComment" />
-	<rule ref="PEAR.Formatting.MultiLineAssignment" />
-	<rule ref="PEAR.WhiteSpace.ObjectOperatorIndent" />
-	<rule ref="PSR1.Files.SideEffects">
+	<rule ref="PSR1.Files.SideEffects"><!-- ignore in tests -->
 		<exclude-pattern>*.phpt</exclude-pattern>
+		<exclude-pattern>*/bootstrap.php</exclude-pattern>
 	</rule>
-	<rule ref="Squiz.Commenting.DocCommentAlignment" />
-	<rule ref="Squiz.Functions.GlobalFunction" />
-	<rule ref="Squiz.PHP.GlobalKeyword" />
-	<rule ref="Squiz.PHP.Heredoc" />
-	<rule ref="Squiz.PHP.InnerFunctions" />
-	<rule ref="Squiz.PHP.LowercasePHPFunctions" />
-	<rule ref="Squiz.PHP.NonExecutableCode" />
-	<rule ref="Squiz.Scope.StaticThisUsage" />
-	<rule ref="Squiz.Strings.DoubleQuoteUsage" />
-	<rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">
-		<message>Variable "%s" not allowed in double quoted string; use sprintf() instead</message>
+	<rule ref="Squiz.Functions.GlobalFunction"><!-- ignore in tests -->
+		<exclude-pattern>*.phpt</exclude-pattern>
+		<exclude-pattern>*/bootstrap.php</exclude-pattern>
 	</rule>
-	<rule ref="Squiz.WhiteSpace.CastSpacing" />
-	<rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace" />
-	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
-		<properties>
-			<property name="spacing" value="1" />
-		</properties>
-		<exclude name="Squiz.WhiteSpace.FunctionSpacing.After" />
-	</rule>
-	<rule ref="Squiz.WhiteSpace.LanguageConstructSpacing" />
-	<rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing" />
-	<rule ref="Squiz.WhiteSpace.MemberVarSpacing" />
-	<rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
-		<exclude name="Squiz.WhiteSpace.ObjectOperatorSpacing.Before" />
-	</rule>
-	<rule ref="Squiz.WhiteSpace.OperatorSpacing">
-		<exclude name="Squiz.WhiteSpace.OperatorSpacing.SpacingBefore" />
-	</rule>
-	<rule ref="Squiz.WhiteSpace.SemicolonSpacing" />
-	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace" />
 </ruleset>
