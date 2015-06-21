@@ -19,13 +19,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Nella\\Sniffs\\": [ "Nella/Sniffs" ],
-			"Consistence\\Sniffs\\": [ "Consistence/Sniffs" ]
+			"Nella\\Sniffs\\": [ "Nella/Sniffs" ]
 		}
 	},
 	"require": {
 		"php": ">=5.4.0",
-		"squizlabs/php_codesniffer": "~2.2.0"
+		"consistence/coding-standard": "~0.6.0"
 	},
 	"require-dev": {
 		"jakub-onderka/php-console-highlighter": "~0.3.1",

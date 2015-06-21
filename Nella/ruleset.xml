@@ -2,11 +2,9 @@
 <ruleset name="Nella Project CS">
 	<description>Nella Project - Coding Standard</description>
 
-	<!-- inspired by Consistence -->
-
 	<arg name="extensions" value="php,phpt" />
 
-	<rule ref="../Consistence/ruleset.xml">
+	<rule ref="../../../consistence/coding-standard/Consistence/ruleset.xml">
 		<exclude name="Generic.PHP.LowerCaseConstant" /><!-- we are using UpperCase constants -->
 		<exclude name="Squiz.Commenting.FunctionComment" /><!-- we are using @param docBlock without $paramName -->
 	</rule>
