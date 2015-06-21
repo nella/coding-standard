@@ -4,7 +4,7 @@
 
 	<arg name="extensions" value="php,phpt" />
 
-	<rule ref="../../../consistence/coding-standard/Consistence/ruleset.xml">
+	<rule ref="../Consistence/ruleset.xml">
 		<exclude name="Generic.PHP.LowerCaseConstant" /><!-- we are using UpperCase constants -->
 		<exclude name="Squiz.Commenting.FunctionComment" /><!-- we are using @param docBlock without $paramName -->
 	</rule>
