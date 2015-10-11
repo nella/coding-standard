@@ -7,6 +7,8 @@ Nella Project - Coding Standard
 [![Dependency Status](https://img.shields.io/versioneye/d/user/projects/54a0657c14969a371200000a.svg?style=flat-square)](https://www.versioneye.com/user/projects/54a0657c14969a371200000a)
 [![HHVM Status](https://img.shields.io/hhvm/nella/coding-standard.svg?style=flat-square)](http://hhvm.h4cc.de/package/nella/coding-standard)
 
+Based on [Consistence - Coding Standard](https://github.com/consistence/coding-standard).
+
 Requirements
 ------------
 - PHP CodeSniffer >=2.3.4
