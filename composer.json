@@ -24,8 +24,8 @@
 		}
 	},
 	"require": {
-		"php": ">=5.4.0",
-		"squizlabs/php_codesniffer": "~2.3.2"
+		"php": ">=5.5.0",
+		"squizlabs/php_codesniffer": "~2.3.4"
 	},
 	"require-dev": {
 		"jakub-onderka/php-console-highlighter": "~0.3.2",
@@ -35,8 +35,7 @@
 		"exclude": [
 			".gitattributes",
 			".gitignore",
-			"/.travis.yml",
-			"/Consistence/tests"
+			".travis.yml"
 		]
 	},
 	"minimum-stability": "dev",

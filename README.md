@@ -9,8 +9,8 @@ Nella Project - Coding Standard
 
 Requirements
 ------------
-- PHP CodeSniffer >=2.2.0
-- PHP >=5.4.0 (5.4.x support will be removed on 14 Sep 2015)
+- PHP CodeSniffer >=2.3.4
+- PHP >=5.5.0 (5.5.x support will be removed on 10 Jul 2016)
 
 License
 -------
