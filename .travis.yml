@@ -8,6 +8,10 @@ php:
   - 7.0
   - hhvm
 
+env:
+  - # default environment without variables
+  - COMPOSER_OPTIONS="--prefer-lowest --prefer-stable"
+
 matrix:
   fast_finish: true
 
@@ -15,7 +19,8 @@ before_install:
   - composer self-update
 
 install:
-  - composer install --no-interaction --prefer-source
+  - composer install --no-interaction --prefer-source $COMPOSER_DEPENDENCIES_OPTIONS
 
 script:
-  - vendor/bin/parallel-lint Nella
+  - bin/parallel-lint Nella
+  - bin/phpcs -sp --standard=Nella/ruleset.xml Nella
