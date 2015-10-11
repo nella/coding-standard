@@ -21,6 +21,9 @@ before_install:
 install:
   - composer update --no-interaction --prefer-source $COMPOSER_DEPENDENCIES_OPTIONS
 
+before_script:
+  - sed -i "s/..\/..\/..\//..\/vendor\//" Nella/ruleset.xml
+
 script:
   - bin/parallel-lint Nella
   - bin/phpcs -sp --standard=Nella/ruleset.xml Nella
