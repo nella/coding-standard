@@ -9,8 +9,7 @@
 		{
 			"name": "Patrik Votoček",
 			"email": "patrik@votocek.cz",
-			"homepage": "http://patrik.votocek.cz",
-			"role": "Developer"
+			"homepage": "http://patrik.votocek.cz"
 		}
 	],
 	"support": {
@@ -24,7 +23,7 @@
 		}
 	},
 	"require": {
-		"php": ">=5.5.0",
+		"php": "~5.5|~7.0",
 		"squizlabs/php_codesniffer": "~2.3.4"
 	},
 	"require-dev": {
