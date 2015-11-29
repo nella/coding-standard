@@ -10,7 +10,7 @@ php:
 
 env:
   - # default environment without variables
-  - COMPOSER_OPTIONS="--prefer-lowest --prefer-stable"
+  - COMPOSER_DEPENDENCIES_OPTIONS="--prefer-lowest --prefer-stable"
 
 matrix:
   fast_finish: true
