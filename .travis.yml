@@ -19,7 +19,7 @@ before_install:
   - composer self-update
 
 install:
-  - composer install --no-interaction --prefer-source $COMPOSER_DEPENDENCIES_OPTIONS
+  - composer update --no-interaction --prefer-source $COMPOSER_DEPENDENCIES_OPTIONS
 
 script:
   - bin/parallel-lint Nella
