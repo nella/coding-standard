@@ -11,7 +11,7 @@ Based on [Consistence - Coding Standard](https://github.com/consistence/coding-s
 
 Requirements
 ------------
-- PHP CodeSniffer >=2.3.4
+- PHP CodeSniffer >=2.5.0
 - PHP >=5.5.0 (5.5.x support will be removed on 10 Jul 2016)
 
 License
