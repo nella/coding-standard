@@ -5,8 +5,9 @@
 	<arg name="extensions" value="php,phpt" />
 
 	<rule ref="../../../consistence/coding-standard/Consistence/ruleset.xml">
-		<exclude name="Generic.PHP.LowerCaseConstant" /><!-- we are using UpperCase constants -->
-		<exclude name="Squiz.Commenting.FunctionComment" /><!-- we are using @param docBlock without $paramName -->
+		<exclude name="Generic.PHP.LowerCaseConstant"/><!-- using UPPER_CASE NULL, TRUE, FALSE -->
+		<exclude name="PEAR.WhiteSpace.ObjectOperatorIndent.Incorrect"/><!-- does not suppord nested fluent interface calls -->
+		<exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName"/><!-- checks for long scalar names in PHPDoc, but we use short -->
 	</rule>
 	<rule ref="PSR1.Files.SideEffects"><!-- ignore in tests -->
 		<exclude-pattern>*.phpt</exclude-pattern>
