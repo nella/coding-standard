@@ -24,5 +24,4 @@ before_script:
   - sed -i "s/..\/..\/..\//..\/vendor\//" Nella/ruleset.xml
 
 script:
-  - bin/parallel-lint Nella
   - bin/phpcs -sp --standard=Nella/ruleset.xml Nella
