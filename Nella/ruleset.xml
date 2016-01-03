@@ -2,7 +2,7 @@
 <ruleset name="Nella Project CS">
 	<description>Nella Project - Coding Standard</description>
 
-	<arg name="extensions" value="php,phpt" />
+	<arg name="extensions" value="php,phpt"/>
 
 	<rule ref="../../../consistence/coding-standard/Consistence/ruleset.xml">
 		<exclude name="Generic.PHP.LowerCaseConstant"/><!-- using UPPER_CASE NULL, TRUE, FALSE -->
