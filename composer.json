@@ -23,7 +23,7 @@
 	},
 	"require": {
 		"php": "~5.5|~7.0",
-		"consistence/coding-standard": "~0.8.0"
+		"consistence/coding-standard": "~0.10.0"
 	},
 	"require-dev": {
 		"jakub-onderka/php-console-highlighter": "0.3.2",
