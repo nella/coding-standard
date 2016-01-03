@@ -9,6 +9,7 @@
 		<exclude name="PEAR.WhiteSpace.ObjectOperatorIndent.Incorrect"/><!-- does not suppord nested fluent interface calls -->
 		<exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName"/><!-- checks for long scalar names in PHPDoc, but we use short -->
 	</rule>
+	<rule ref="Generic.PHP.UpperCaseConstant"/><!-- using UPPER_CASE NULL, TRUE, FALSE -->
 	<rule ref="PSR1.Files.SideEffects"><!-- ignore in tests -->
 		<exclude-pattern>*.phpt</exclude-pattern>
 		<exclude-pattern>*/bootstrap.php</exclude-pattern>
