@@ -22,4 +22,14 @@
 		<exclude-pattern>*.phpt</exclude-pattern>
 		<exclude-pattern>*/bootstrap.php</exclude-pattern>
 	</rule>
+	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+		<properties>
+			<property name="searchAnnotations" type="bool" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword">
+		<properties>
+			<property name="keywordsToCheck" type="array" value="T_EXTENDS,T_IMPLEMENTS"/>
+		</properties>
+	</rule>
 </ruleset>
